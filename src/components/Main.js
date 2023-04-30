@@ -11,9 +11,7 @@ const Main = () => {
     if (!result.destination) return;
     const { source, destination } = result;
 
-    //動かし始めたcolumnが違うcolumnに移動したら
     if (source.droppableId !== destination.droppableId) {
-      //動かし始めたcolumnの配列の番号を取得()
       const sourceColIndex = data.findIndex((e) => e.id === source.droppableId);
       console.log(sourceColIndex);
       //動かし終わったcolumnの配列の番号を取得()
@@ -25,9 +23,6 @@ const Main = () => {
       const sourseCol = data[sourceColIndex];
       const destinationCol = data[destinationColIndex];
 
-      //動かし始めたタスクに属していたカラムの中のタスクを全て取得
-      //後でsplice関数でその動かし始めたタスクを削除するため
-      //sourceTaskに配列をコピーしておく(破壊操作を後でするため)
       const sourceTask = [...sourseCol.tasks];
       console.log(sourceTask);
 
@@ -46,7 +41,6 @@ const Main = () => {
 
       setData(data);
     } else {
-      //同じカラム内でタスクの入れ替え。
       const sourceColIndex = data.findIndex((e) => e.id === source.droppableId);
       const sourseCol = data[sourceColIndex];
       console.log(sourseCol);
@@ -105,7 +99,6 @@ const Main = () => {
           ))}
         </div>
       </DragDropContext>
-      <button></button>
     </div>
   );
 };

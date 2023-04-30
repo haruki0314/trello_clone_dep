@@ -11,11 +11,11 @@ const dummyData = [
       },
       {
         id: uuidv4(),
-        title: "2",
+        title: "資料作成",
       },
       {
         id: uuidv4(),
-        title: "3",
+        title: "お客様にメール",
       },
     ],
   },
@@ -25,15 +25,15 @@ const dummyData = [
     tasks: [
       {
         id: uuidv4(),
-        title: "react学習",
+        title: "ポートフォリオ作成",
       },
       {
         id: uuidv4(),
-        title: "2-2",
+        title: "退職願",
       },
       {
         id: uuidv4(),
-        title: "2-3",
+        title: "上司にメール",
       },
     ],
   },
@@ -43,15 +43,15 @@ const dummyData = [
     tasks: [
       {
         id: uuidv4(),
-        title: "react学習",
+        title: "優しいJAVAを読む",
       },
       {
         id: uuidv4(),
-        title: "3-2",
+        title: "DDDの本を読む",
       },
       {
         id: uuidv4(),
-        title: "3-3",
+        title: "データ構造の本を読む",
       },
     ],
   },
